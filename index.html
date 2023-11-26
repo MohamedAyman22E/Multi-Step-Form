@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pro.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-wrap">
+      <div class="form-countainer">
+        <form action="" id="multi-step-form">
+          <div class="form-container-box">
+            <h1 class="form-title">multi step form</h1>
+            <ul class="progress-bar">
+              <li class="step1 active">user info</li>
+              <li class="step2">address</li>
+              <li class="step3">comments</li>
+            </ul>
+
+            <div class="gourps">
+              <!-- start first group -->
+
+              <div class="step-group active" id="step-gorup-1">
+                <div class="form-box">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-felid"
+                      placeholder="first name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-felid"
+                      placeholder="last name"
+                    />
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-felid"
+                      placeholder="email"
+                    />
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-group">
+                    <input type="text" class="form-felid" placeholder="phone" />
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="btn-step">
+                    <button class="btn" id="step-next-1">
+                      next <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end first group -->
+              <!-- start second group -->
+
+              <div class="step-group" id="step-gorup-2">
+                <div class="form-box">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-felid"
+                      placeholder="address 1"
+                    />
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-felid"
+                      placeholder="address 1"
+                    />
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-group">
+                    <input type="text" class="form-felid" placeholder="city" />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-felid" placeholder="zip" />
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="btn-step">
+                    <button class="btn" id="step-prev-1">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      prev
+                    </button>
+                    <button class="btn" id="step-next-2">
+                      next <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end second group -->
+              <!-- start third group -->
+
+              <div class="step-group" id="step-gorup-3">
+                <div class="form-box">
+                  <div class="form-group">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="message"
+                      class="form-felid"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="form-box">
+                  <div class="btn-step">
+                    <button class="btn" id="step-prev-2">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      prev
+                    </button>
+                    <button class="btn" id="step-next-3">
+                      send <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- end third group -->
+      
+            </div>
+          </div>
+        </form>
+
+                <!-- start end message -->
+                <div class="step-group" id="step-gorup-4">
+                    <div class="icon">
+                      <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h2>
+                      your message was sent successful. <br />
+                      thanks
+                    </h2>
+    
+                    <button class="btn" id="step-prev-3">refress</button>
+                  </div>
+    
+                  <!-- end end message -->
+      </div>
+    </div>
+
+    <script src="pro.js"></script>
+  </body>
+</html>
